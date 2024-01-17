@@ -16,7 +16,9 @@
     background-color: white;
 
 }
-
+.flipkart-logo{
+    width: 10rem;
+}
 .homepage-searchbar{
     display: flex;
     flex-direction: row;
@@ -165,7 +167,13 @@ ul{
 
 
 
-.cart{
+.cartlink{
+    text-decoration: none;
+    color: black;
+}
+.cartlink:visited{
+    text-decoration: none;
+    color: black;
 }
 .become-seller{
 }

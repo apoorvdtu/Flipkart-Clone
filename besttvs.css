@@ -1,4 +1,4 @@
-.best-mobile{
+.best-tvs{
     display: flex;
     flex-direction: column;
     margin: 0.5rem 8rem;
@@ -8,10 +8,10 @@
     padding-left: 1rem;
     padding-bottom: 1rem;
 }
-.best-mobile *{
+.best-tvs *{
     background-color: white;
 }
-.best-mobile-text-container{
+.best-tvs-text-container{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -19,7 +19,7 @@
     align-items: center;
     margin-bottom: 1.25rem;
 }
-.best-mobile-text-container-arrow{
+.best-tvs-text-container-arrow{
     background-color: blue;
     height: 1.5rem;
     width: 1.5rem;
@@ -29,14 +29,14 @@
     justify-content: center;
     color: white;
 }
-.best-mobile-text-container-text{
+.best-tvs-text-container-text{
     font-size: 2rem;
 }
-.best-mobile-product-container{
+.best-tvs-product-container{
     display: flex;
     overflow-x: auto
 }
-.best-mobile-product{
+.best-tvs-product{
     display: flex;
     flex-direction: column;
     border:0.1rem solid lightgray;
@@ -50,11 +50,11 @@
     cursor: pointer;
    
 }
-.best-mobile-product-image{
+.best-tvs-product-image{
     width: 8rem;
     margin-bottom: 0.25rem;
 }
-.best-mobile-product-image:hover,.add-to-cart:hover{
+.best-tvs-product-image:hover,.add-to-cart:hover{
    transform: scale(1.05);
    
 }
@@ -70,6 +70,6 @@
 del{
     color: red;
 }
-.best-mobile-product-discount-price{
+.best-tvs-product-discount-price{
     color: green;
 }

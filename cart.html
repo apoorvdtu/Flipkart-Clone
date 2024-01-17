@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping Cart</title>
+    <link rel="stylesheet" href="cart.css">
+    <script src="cart.js" defer></script>
+</head>
+<body>
+   
+    <header class="cart-header">
+    <a href="index.html"><img src="icons/FlipkartNavbarLogo.png" alt=""></a>
+    </header>
+
+
+    <div class="cart-container">
+        <div class="cart-shopping-items">
+            <div class="cart-shopping-items-header">
+                <span class="cart-shopping-items-header-text1">Shopping Cart</span>
+                <span class="cart-shopping-items-header-text2">Price</span>
+            </div>
+            <hr>
+
+
+             <template>
+                <div class="cart-shopping-items-product">
+               
+                    <img class="cart-shopping-items-product-img" src="icons/phoneicon.png" alt="">
+                    <div class="cart-shopping-items-product-info">
+                         <div class="cart-shopping-items-product-info-name">
+                            Samsung Galaxy S22 Ultra 5G (Burgundy, 12GB, 256GB Storage) with No Cost EMI/Additional Exchange Offers
+                         </div>
+                         <div class="cart-shopping-items-product-info-text-in-stock">
+                             In stock
+                         </div>
+                         <div class="cart-shopping-items-product-info-text-eligible">
+                             Eligible for FREE Shipping
+                         </div>
+                         <div class="cart-shopping-items-product-info-product-count">
+                             <button class="cart-shopping-items-product-info-product-count-dec">-</button>
+                             <div class="cart-shopping-items-product-info-product-count-qty">&nbsp;Qty:&nbsp;<span class="cart-shopping-items-product-info-product-count-qty-1">1</span>&nbsp;</div>
+                             <button class="cart-shopping-items-product-info-product-count-inc">+</button>
+                         </div>
+                         <button class="cart-shopping-items-product-info-remove">Delete</button>
+                    </div>
+                    <div class="cart-shopping-items-product-price">
+                     <div class="cart-shopping-items-product-price-current">
+                         Rs84,999.00
+                     </div>
+                     <div class="cart-shopping-items-product-price-old">
+                        MRP: <del>Rs99,999.00</del>
+                     </div>
+                    
+                    </div>
+                 </div>
+             </template>
+
+
+
+        </div>
+            
+       <div>
+        <div class="cart-shopping-price-details">
+            Price Details
+            <hr>
+            <div class="cart-shopping-price-details-total-price">
+                <div class="cart-shopping-price-details-total-price-text">
+                    Price : 
+                </div>
+                <div class="cart-shopping-price-details-total-price-value">
+                    Rs9000
+                </div>
+            </div>
+            <div class="cart-shopping-price-details-total-price">
+                <div class="cart-shopping-price-details-total-price-text">
+                    Discount : 
+                </div>
+                <div class="cart-shopping-price-details-total-price-value discount">
+                    Rs9000
+                </div>
+            </div>
+            <hr>
+            <strong class="cart-shopping-price-details-final-price"> 
+                <div class="cart-shopping-price-details-final-price-text">
+                    Final Price : 
+                </div>
+                <div class="cart-shopping-price-details-final-price-value">
+                    Rs9000
+                </div>
+            </strong>
+            <hr>
+            <div class="cart-shopping-price-details-savings">
+                <div class="cart-shopping-price-details-savings-text">
+                    Total Savings : 
+                </div>
+                <div class="cart-shopping-price-details-savings-value">
+                    Rs9000
+                </div>
+             </div>
+        </div>
+        <div class="place-order-container">
+           <button class="place-order-button">Place Order</button>
+        </div>
+       </div>
+       
+    </div>
+</body>
+</html>

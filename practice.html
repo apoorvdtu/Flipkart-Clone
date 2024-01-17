@@ -5,19 +5,42 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-        
-        .abc{
-            background-color: black;
+        *{
+            margin: 0;
+            padding: 0;
         }
-        [data-red="red"]{
-            background-color: aqua;
-        }
-        #a1{
-            background-color: rgb(28, 0, 68);
-        }
+       .div1{
+        height: 120px;
+        width: 120px;
+        background-color: red;
+        /* position: fixed; */
+    }
+    .div2{
+        height: 120px;
+        width: 120px;
+
+        background-color: yellow;
+        position: fixed;
+        /* top: 0; */
+    }
+    .div3{
+        height: 120px;
+        width: 120px;
+        background-color: green;
+        /* position: fixed; */
+        display: inline;
+        word-wrap: normal;
+        text-wrap: wrap;
+    }
+       
     </style>
 </head>
 <body>
-    <input type="text" data-red="red" class="abc" id = "a1">
+    <div class="div1"></div>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam, aliquid?</p>
+    <div class="div2"></div>
+    
+    <div class="div3"></div>
+    <!-- <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam, aliquid?</p> -->
 </body>
 </html>

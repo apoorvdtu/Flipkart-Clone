@@ -15,17 +15,20 @@
     <link rel="stylesheet" href="navbarhomepage.css">
     <link rel="stylesheet" href="productcategory.css">
     <link rel="stylesheet" href="bestmobile.css">
+    <link rel="stylesheet" href="besttvs.css">
+
+    <script src="index.js" defer></script>
 </head>
 <body>
     <!-- Navigation Component -->
     <nav class="homepage-nav">
-        <a class="flipkart-logo" href="https://flipkart.com" target="_blank"><img src="https://static-assets-web.flixcart.com/batman-returns/batman-returns/p/images/fkheaderlogo_exploreplus-44005d.svg" alt="" srcset=""></a>
+        <a class="flipkart-logo" href="https://flipkart.com" target="_blank"><img class="flipkart-logo"  src="/icons/FlipkartNavbarLogo.png" alt="" srcset=""></a>
         <div class="homepage-searchbar">
             <img class="searchicon" src="icons/searchicon.svg" alt="Search Icon" srcset="">
             <input type="text" name="" id="searchbar" placeholder="Search for Products,Brands and More">
         </div>
         <div class="login">
-            <img class="login-img" src="https://static-assets-web.flixcart.com/batman-returns/batman-returns/p/images/profile-52e0dc.svg" alt="" srcset="">
+            <img class="login-img" src="icons/login.png" alt="" srcset="">
             <div class="login-btn" >Login</div>
         <div class="login-properties"> 
             <div class="login-properties-new-customer">
@@ -44,54 +47,59 @@
             </ul>
         </div> 
         </div>
-        <div class="cart">
-            <div class="cart-img-container">
-                <img class="cart-img" src="icons/shoppingcart.png" alt="">
-                <div class="cart-item-count">1</div>
+        <a class="cartlink" href="cart.html">
+            <div class="cart">
+                <div class="cart-img-container">
+                    <img class="cart-img" src="icons/shoppingcart.png" alt="">
+                    <div class="cart-item-count">0</div>
+                </div>
+                <span>Cart</span>    
             </div>
-            <span>Cart</span>    
-        </div>
-        <div class="become-seller">
-            <img class="become-seller-img" src="https://static-assets-web.flixcart.com/batman-returns/batman-returns/p/images/Store-9eeae2.svg" alt="" srcset="">
-           <span class="become-seller-text"> Become Seller</span></div>
+        </a>
+        <a class="cartlink" href = "addproduct.html">
+            <div class="become-seller">
+               <img class="become-seller-img" src="icons/becomeseller.png" alt="" srcset="">
+               <span class="become-seller-text"> Add New Product</span>
+            </div>
+        </a>
 
     </nav>
     <!-- Product Catgory  -->
     <nav class="product-category">
         <div class="category category-1">
-            <img  class="category-img" src="https://rukminim2.flixcart.com/fk-p-flap/128/128/image/38a459d6d1fc930a.png?q=100" alt="" srcset="">
+            <img  class="category-img" src="icons/MobileCategoryIcon.png" alt="" srcset="">
             <span>Mobile & Tablets</span>
         </div>
         <div class="category category-2">
-            <img class="category-img" src="https://rukminim2.flixcart.com/fk-p-flap/128/128/image/629b0a6f61037ae6.png?q=100" alt="" srcset="">
+            <img class="category-img" src="icons/TVElectronics.png" alt="" srcset="">
             <span>TV & Electronics</span>
         </div>
         <div class="category category-3">
-            <img class="category-img" src="https://rukminim2.flixcart.com/fk-p-flap/128/128/image/f2802fac96dffea9.png?q=100" alt="" srcset="">
+            <img class="category-img" src="icons/Appliances.png" alt="" srcset="">
             <span>Appliances</span>
         </div>
         <div class="category category-4">
-            <img class="category-img" src="https://rukminim2.flixcart.com/fk-p-flap/128/128/image/74f0eb6cc10e2743.png?q=100" alt="">
+            <img class="category-img" src="icons/Fashion.png" alt="">
             <span>Fashion</span>
         </div>
         <div class="category category-5">
-            <img class="category-img" src="https://rukminim2.flixcart.com/fk-p-flap/128/128/image/f925cfe5ecdf6acf.png?q=100" alt="" srcset="">
+            <img class="category-img" src="icons/Beauty.png" alt="" srcset="">
             <span>Beauty</span>
         </div>
         <div class="category category-6">
-            <img class="category-img" src="https://rukminim2.flixcart.com/fk-p-flap/128/128/image/38d4fbb64c70a3ff.png?q=100" alt="">
+            <img class="category-img" src="icons/HomeKitchen.png" alt="">
             <span>Home & Kitchen</span>
         </div>
         <div class="category category-7">
-            <img class="category-img" src="https://rukminim2.flixcart.com/fk-p-flap/128/128/image/fef14e08ec83a6d7.png?q=100" alt="">
+            <img class="category-img" src="icons/Furniture.png" alt="">
             <span>Furniture</span>
         </div>
         <div class="category category-8">
-            <img class="category-img" src="https://rukminim2.flixcart.com/fk-p-flap/128/128/image/83de409bda2f3834.png?q=100" alt="">
+            <img class="category-img" src="icons/Flights.png" alt="">
             <span>Flights</span>
         </div>
         <div class="category category-9">
-            <img  class="category-img" src="https://rukminim2.flixcart.com/fk-p-flap/128/128/image/711174cfe1d2fa75.png?q=100" alt="">
+            <img  class="category-img" src="icons/Grocery.png" alt="">
             <span>Grocery</span>
         </div>
     </nav>
@@ -104,71 +112,40 @@
         </div>
         <div class="best-mobile-product-container">
               
+          <template id = "best-mobile-product">
             <div class="best-mobile-product">
                 <img class="best-mobile-product-image" src="/icons/phoneicon.png" alt="">
-                <span>Redmi Note 12</span>
-                <span><strong>incl of offers</strong></span>
-            </div>
-            <div class="best-mobile-product">
-                <img class="best-mobile-product-image" src="/icons/phoneicon.png" alt="">
-                <span>Redmi Note 12</span>
-                <span><strong>incl of offers</strong></span>
-            </div>
-            <div class="best-mobile-product">
-                <img class="best-mobile-product-image" src="/icons/phoneicon.png" alt="">
-                <span>Redmi Note 12</span>
-                <span><strong>incl of offers</strong></span>
-            </div>
-            <div class="best-mobile-product">
-                <img class="best-mobile-product-image" src="/icons/phoneicon.png" alt="">
-                <span>Redmi Note 12</span>
-                <span><strong>incl of offers</strong></span>
-            </div>
-            <div class="best-mobile-product">
-                <img class="best-mobile-product-image" src="/icons/phoneicon.png" alt="">
-                <span>Redmi Note 12</span>
-                <span><strong>incl of offers</strong></span>
-            </div> <div class="best-mobile-product">
-                <img class="best-mobile-product-image" src="/icons/phoneicon.png" alt="">
-                <span>Redmi Note 12</span>
-                <span><strong>incl of offers</strong></span>
-            </div> <div class="best-mobile-product">
-                <img class="best-mobile-product-image" src="/icons/phoneicon.png" alt="">
-                <span>Redmi Note 12</span>
-                <span><strong>incl of offers</strong></span>
-            </div> <div class="best-mobile-product">
-                <img class="best-mobile-product-image" src="/icons/phoneicon.png" alt="">
-                <span>Redmi Note 12</span>
-                <span><strong>incl of offers</strong></span>
-            </div> <div class="best-mobile-product">
-                <img class="best-mobile-product-image" src="/icons/phoneicon.png" alt="">
-                <span>Redmi Note 12</span>
-                <span><strong>incl of offers</strong></span>
-            </div> <div class="best-mobile-product">
-                <img class="best-mobile-product-image" src="/icons/phoneicon.png" alt="">
-                <span>Redmi Note 12</span>
-                <span><strong>incl of offers</strong></span>
-            </div> <div class="best-mobile-product">
-                <img class="best-mobile-product-image" src="/icons/phoneicon.png" alt="">
-                <span>Redmi Note 12</span>
-                <span><strong>incl of offers</strong></span>
-            </div> <div class="best-mobile-product">
-                <img class="best-mobile-product-image" src="/icons/phoneicon.png" alt="">
-                <span>Redmi Note 12</span>
-                <span><strong>incl of offers</strong></span>
-            </div> <div class="best-mobile-product">
-                <img class="best-mobile-product-image" src="/icons/phoneicon.png" alt="">
-                <span>Redmi Note 12</span>
-                <span><strong>incl of offers</strong></span>
-            </div> <div class="best-mobile-product">
-                <img class="best-mobile-product-image" src="/icons/phoneicon.png" alt="">
-                <span>Redmi Note 12</span>
-                <span><strong>incl of offers</strong></span>
-            </div>
+                <span class="best-mobile-product-name">Redmi Note 12</span>
+                <del>Rs<span class="best-mobile-product-orginal-price">9999</span></del>
+                <span>Rs<span class="best-mobile-product-discount-price">7999</span></span>
+                <button class="add-to-cart">Add to Cart</button>
+            </div> 
+          </template>
         </div>
 
-      
     </div>
+
+     <!-- Best TVs -->
+     <div class="best-tvs">
+        <div class="best-tvs-text-container">
+            <div class="best-tvs-text-container-text"><strong>Best tvss</strong></div>
+            <div class="best-tvs-text-container-arrow">&gt;</div>
+        </div>
+        <div class="best-tvs-product-container">
+              
+          <template id = "best-tvs-product">
+            <div class="best-tvs-product">
+                <img class="best-tvs-product-image" src="/icons/phoneicon.png" alt="">
+                <span class="best-tvs-product-name">Redmi Note 12</span>
+                <del>Rs<span class="best-tvs-product-orginal-price">9999</span></del>
+                <span>Rs<span class="best-tvs-product-discount-price">7999</span></span>
+                <button class="add-to-cart">Add to Cart</button>
+            </div> 
+          </template>
+        </div>
+
+    </div>
+
 
 
 </body>
