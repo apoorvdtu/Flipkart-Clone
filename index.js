@@ -4,13 +4,10 @@ const cartItemCount = document.querySelector('.cart-item-count');
 const cart = fetchCartFromStorage();
 const loginContainer = document.querySelector('.login-btn');
 
-
-
 const products = fetchProductsFromLocalStorage();
-function isUserLogin(){
+function fetchUserAndUpdateLoginComponent(){
     const userJSON = localStorage.getItem('user')??'{}';
     const user = JSON.parse(userJSON);
-    console.log(user);
     if(!user.email||!user.password){
         return;
     }
@@ -23,7 +20,7 @@ function isUserLogin(){
 //     password:'123456'
 // }
 // localStorage.setItem('user',JSON.stringify(user));
-isUserLogin();
+fetchUserAndUpdateLoginComponent();
 const addToCartButtonHandler =(event)=>{
     const productElement = event.target.parentElement;
     const productId = productElement.id;
@@ -68,7 +65,6 @@ function saveProductsInStorage(){
     const mobileProducts = [product1,product2,product3,product4,product5,product6,product7,product8,product9];
     localStorage.setItem('products',JSON.stringify(mobileProducts));
 }
-// saveProductsInStorage();
 function createProductElement(product){
     const template = document.querySelector('#best-mobile-product').content.cloneNode(true);
     const mobileProduct = template.querySelector('.best-mobile-product');

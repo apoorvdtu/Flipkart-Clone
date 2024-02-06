@@ -21,10 +21,13 @@ addProductForm.addEventListener('submit',function(event){
    const productOriginalPrice = +addProductForm.elements.productOriginalPrice.value;
    const productDiscountPrice = +addProductForm.elements.productDiscountPrice.value;
    const productStockUnits = +addProductForm.elements.productStockUnits.value; 
-//    const productImgSrc = addProductForm.elements.productImg.files[0];
-//    console.log(productImgSrc);
-//    console.log(productName,productOriginalPrice,productDiscountPrice,productStockUnits);
-   if(!productName||Number.isNaN(productStockUnits)||Number.isNaN(productDiscountPrice)||Number.isNaN(productOriginalPrice)){
+   const addProductFormDetailsObj = {
+    productOriginalPrice,
+    productDiscountPrice,
+    productName,
+    productStockUnits
+   }
+   if(isAddProductFormDetailsValid(addProductFormDetailsObj)===false){
         alert('Please Fill All The Details Correctly');
    }
    let maxId = 0;
@@ -33,6 +36,12 @@ addProductForm.addEventListener('submit',function(event){
    })
    const product = new Product(String(maxId+1),productName,'/icons/phoneicon.png',productOriginalPrice,productDiscountPrice,productStockUnits,productCategory);
    products.push(product);
-   localStorage.setItem('products',JSON.stringify(products));
+   saveProductsInLocalStorage();
 })
+function isAddProductFormDetailsValid({productName,productStockUnits,productDiscountPrice,productOriginalPrice}){
+    return !productName||Number.isNaN(productStockUnits)||Number.isNaN(productDiscountPrice)||Number.isNaN(productOriginalPrice);
+}
+function saveProductsInLocalStorage(){
+    localStorage.setItem('products',JSON.stringify(products));
+}
 
