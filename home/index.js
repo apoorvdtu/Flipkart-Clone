@@ -70,21 +70,27 @@ products.forEach((product) => {
     createTvProductElement(product);
 });
 function createTvProductElement(product) {
+  console.log(product);
   const template = document.querySelector('#best-tvs-product').content.cloneNode(true);
   const tvProduct = template.querySelector('.best-tvs-product');
+  
   const tvProductName = template.querySelector('.best-tvs-product-name');
   const tvProductImg = template.querySelector('.best-tvs-product-image');
   const tvProductOriginalPrice = template.querySelector('.best-tvs-product-orginal-price');
   const tvProductDiscountPrice = template.querySelector('.best-tvs-product-discount-price');
   const addToCartButton = template.querySelector('.add-to-cart');
+  console.log(tvProductOriginalPrice);
   // const mobileProductName = template.querySelector('.best-mobile-product-name');
   tvProduct.setAttribute('id', product.id);
   tvProductName.textContent = product.name;
   tvProductImg.src = product.imgSrc;
   tvProductOriginalPrice.textContent = product.originalPrice;
   tvProductDiscountPrice.textContent = product.discountPrice;
+  
   addToCartButton.addEventListener('click', addToCartButtonHandler);
   // console.log(mobileProduct);
   // console.log("---");
+  console.log(tvProduct);
+  
   bestTvProductsContainer.append(tvProduct);
 }
