@@ -1,10 +1,11 @@
-*{
+* {
     background-color: rgb(232, 232, 232);
     box-sizing: border-box;
     margin: 0;
     padding: 0;
 }
-.homepage-nav{
+
+.homepage-nav {
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
@@ -12,17 +13,20 @@
     background-color: white;
     padding: 1rem;
 }
-.homepage-nav *{
+
+.homepage-nav * {
     background-color: white;
 
 }
-.flipkart-logo{
+
+.flipkart-logo {
     width: 10rem;
 }
-.homepage-searchbar{
+
+.homepage-searchbar {
     display: flex;
     flex-direction: row;
-    align-items:center;
+    align-items: center;
     justify-content: baseline;
     border: 1px solid grey;
     border-radius: 1rem;
@@ -31,14 +35,16 @@
     background-color: rgb(207, 207, 207);
     cursor: pointer;
 
-} 
-.searchicon{
+}
+
+.searchicon {
     width: 2.4rem;
     background-color: rgb(207, 207, 207);
     cursor: pointer;
 
 }
-#searchbar{
+
+#searchbar {
     padding: 0.5rem;
     width: 25rem;
     height: 2rem;
@@ -48,36 +54,41 @@
     background-color: rgb(207, 207, 207);
 
 }
-input#searchbar::placeholder{
+
+input#searchbar::placeholder {
     font-size: 1.25rem;
 }
-input#searchbar:focus{
-    outline:none;
+
+input#searchbar:focus {
+    outline: none;
 }
 
 
-.login{
+.login {
     display: flex;
     position: relative;
     align-items: center;
     cursor: pointer;
 }
-.login-btn,.login-img{
+
+.login-btn,
+.login-img {
     /* padding: 1rem; */
     width: 2rem;
     margin-right: 0.25rem;
 }
-.login .login-properties{
+
+.login .login-properties {
     display: none;
     position: absolute;
 }
 
-.login-properties{
+.login-properties {
     display: none;
     position: absolute;
 }
 
-.login:hover .login-properties{
+.login:hover .login-properties {
     display: block;
     /* top: 2rem; */
     top: 2rem;
@@ -86,35 +97,41 @@ input#searchbar:focus{
 }
 
 
-.login-properties .login-properties-new-customer{
+.login-properties .login-properties-new-customer {
     display: flex;
     justify-content: space-between;
-    margin-bottom: 0.5rem;    
+    margin-bottom: 0.5rem;
 }
 
-.login-properties-list .my-profile{
-    list-style-image: url("https://static-assets-web.flixcart.com/batman-returns/batman-returns/p/images/profile-52e0dc.svg");
-}
-.login-properties-list .my-profile{
+.login-properties-list .my-profile {
     list-style-image: url("https://static-assets-web.flixcart.com/batman-returns/batman-returns/p/images/profile-52e0dc.svg");
 }
 
-.login-properties-list .flipkart-plus-zone{
+.login-properties-list .my-profile {
     list-style-image: url("https://static-assets-web.flixcart.com/batman-returns/batman-returns/p/images/profile-52e0dc.svg");
 }
-.login-properties-list .orders{
+
+.login-properties-list .flipkart-plus-zone {
     list-style-image: url("https://static-assets-web.flixcart.com/batman-returns/batman-returns/p/images/profile-52e0dc.svg");
 }
-.login-properties-list .flipkart-plus-zone{
+
+.login-properties-list .orders {
     list-style-image: url("https://static-assets-web.flixcart.com/batman-returns/batman-returns/p/images/profile-52e0dc.svg");
 }
-.login-properties-list .wishlist{
+
+.login-properties-list .flipkart-plus-zone {
     list-style-image: url("https://static-assets-web.flixcart.com/batman-returns/batman-returns/p/images/profile-52e0dc.svg");
 }
-.login-properties-list .rewards{
+
+.login-properties-list .wishlist {
     list-style-image: url("https://static-assets-web.flixcart.com/batman-returns/batman-returns/p/images/profile-52e0dc.svg");
 }
-.login-properties-list .giftcards{
+
+.login-properties-list .rewards {
+    list-style-image: url("https://static-assets-web.flixcart.com/batman-returns/batman-returns/p/images/profile-52e0dc.svg");
+}
+
+.login-properties-list .giftcards {
     list-style-image: url("https://static-assets-web.flixcart.com/batman-returns/batman-returns/p/images/profile-52e0dc.svg");
 }
 
@@ -122,26 +139,28 @@ input#searchbar:focus{
     background-color: green;
 }
 
-ul{
+ul {
     list-style-position: inside;
     /* list-style-image: ; */
 }
 
-.cart-img{
+.cart-img {
     width: 1.75rem;
     margin-right: 0.25rem;
 }
-.cart{
+
+.cart {
     display: flex;
     align-items: center;
     cursor: pointer;
 }
 
-.cart-img-container{
+.cart-img-container {
     position: relative;
 }
-.cart-item-count{
-    position:absolute;
+
+.cart-item-count {
+    position: absolute;
     background-color: red;
     color: white;
     border-radius: 50%;
@@ -155,23 +174,24 @@ ul{
     right: 0.2rem;
 }
 
-.become-seller{
+.become-seller {
     display: flex;
     align-items: center;
 }
 
-.become-seller-img{
-   width: 2rem;
-   margin-right: 0.25rem;
+.become-seller-img {
+    width: 2rem;
+    margin-right: 0.25rem;
 }
 
 
 
-.cartlink{
+.cartlink {
     text-decoration: none;
     color: black;
 }
-.cartlink:visited{
+
+.cartlink:visited {
     text-decoration: none;
     color: black;
 }

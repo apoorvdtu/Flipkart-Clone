@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add a Product</title>
+    <link rel="stylesheet" href="addproduct.css">
+    <script type="module" src="addproduct.js" defer></script>
+</head>
+<body>
+    <header class="add-product-header">
+        <a href="/home/index.html"><img src="/icons/FlipkartNavbarLogo.png" alt="Flipkart Logo"></a>
+    </header>
+    <div class="addProductForm">
+        <form id="addProductForm">
+            <fieldset>
+                <legend>Product Name</legend>
+                <input required type="text" name="productName" id="productName" placeholder="Enter Product Name"
+                    aria-label="Product Name">
+            </fieldset>
+            <fieldset>
+                <legend>Product Category</legend>
+                <select name="productCategory" required aria-label="Product Category">
+                    <option value="Mobiles">Mobiles</option>
+                    <option value="TVs">TVs</option>
+                </select>
+            </fieldset>
+            <fieldset>
+                <legend>Product Original Price</legend>
+                <input required type="number" name="productOriginalPrice" id="productOriginalPrice"
+                    placeholder="Enter Product Original Price" aria-label="Product Original Price">
+            </fieldset>
+            <fieldset>
+                <legend>Product Discount Price</legend>
+                <input required type="number" name="productDiscountPrice" id="productDiscountPrice"
+                    placeholder="Enter Product Discount Price" aria-label="Product Discount Price">
+            </fieldset>
+            <!-- <fieldset>
+                <legend>Product Image</legend>
+                <input type="file" name="productImg" accept=".jpg, .jpeg, .png" aria-label="Product Image">
+            </fieldset> -->
+            <fieldset>
+                <legend>Product Stock</legend>
+                <input required type="number" name="productStockUnits" id="productStockUnits"
+                    placeholder="Enter Product Stock Units" aria-label="Product Stock Units">
+            </fieldset>
+            <input class="addProductButton" type="submit" value="Add Product" aria-label="Add Product Button">
+        </form>
+    </div>
+</body>
+</html>

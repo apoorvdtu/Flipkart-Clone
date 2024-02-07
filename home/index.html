@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ecommerce</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="navbarhomepage.css">
+    <link rel="stylesheet" href="productcategory.css">
+    <link rel="stylesheet" href="bestmobile.css">
+    <link rel="stylesheet" href="besttvs.css">
+    <script type="module" src="index.js" defer></script>
+</head>
+
+<body>
+    <!-- Navigation Component -->
+    <nav class="homepage-nav">
+        <a class="flipkart-logo" href="#" target="_blank">
+            <img class="flipkart-logo" src="/icons/FlipkartNavbarLogo.png" alt="Flipkart Homepage"
+                aria-label="Flipkart Homepage">
+        </a>
+        <div class="homepage-searchbar">
+            <img class="searchicon" src="/icons/searchicon.svg" alt="Search Icon" aria-hidden="true">
+            <input type="text" name="" id="searchbar" placeholder="Search for Products, Brands and More"
+                aria-label="Search Bar">
+        </div>
+        <div class="login">
+            <img class="login-img" src="/icons/login.png" alt="Login Icon" aria-hidden="true">
+            <div class="login-btn" role="button" tabindex="0">Login</div>
+            <div class="login-properties">
+                <div class="login-properties-new-customer">
+                    <span>New Customer?</span>
+                    <button role="button" tabindex="0">Sign Up</button>
+                </div>
+                <hr aria-hidden="true">
+                <ul class="login-properties-list">
+                    <li class="my-profile">My Profile</li>
+                    <li class="flipkart-plus-zone">Flipkart Plus Zone</li>
+                    <li class="orders">Orders</li>
+                    <li class="wishlist">Wishlist</li>
+                    <li class="rewards">Rewards</li>
+                    <li class="giftcards">Gift Cards</li>
+                </ul>
+            </div>
+        </div>
+        <a class="cartlink" href="/cart/cart.html">
+            <div class="cart">
+                <div class="cart-img-container">
+                    <img class="cart-img" src="/icons/shoppingcart.png" alt="Shopping Cart" aria-label="Shopping Cart">
+                    <div class="cart-item-count" aria-hidden="true">0</div>
+                </div>
+                <span>Cart</span>
+            </div>
+        </a>
+        <a class="cartlink" href="/addproduct/addproduct.html">
+            <div class="become-seller">
+                <img class="become-seller-img" src="/icons/becomeseller.png" alt="Become a Seller"
+                    aria-label="Become a Seller">
+                <span class="become-seller-text">Add New Product</span>
+            </div>
+        </a>
+    </nav>
+
+    <!-- Product Catgory  -->
+    <nav class="product-category">
+        <div class="category category-1">
+            <img class="category-img" src="/icons/MobileCategoryIcon.png" alt="Mobile & Tablets">
+            <span>Mobile & Tablets</span>
+        </div>
+        <div class="category category-2">
+            <img class="category-img" src="/icons/TVElectronics.png" alt="TV & Electronics">
+            <span>TV & Electronics</span>
+        </div>
+        <div class="category category-3">
+            <img class="category-img" src="/icons/Appliances.png" alt="Appliances">
+            <span>Appliances</span>
+        </div>
+        <div class="category category-4">
+            <img class="category-img" src="/icons/Fashion.png" alt="Fashion">
+            <span>Fashion</span>
+        </div>
+        <div class="category category-5">
+            <img class="category-img" src="/icons/Beauty.png" alt="Beauty">
+            <span>Beauty</span>
+        </div>
+        <div class="category category-6">
+            <img class="category-img" src="/icons/HomeKitchen.png" alt="Home & Kitchen">
+            <span>Home & Kitchen</span>
+        </div>
+        <div class="category category-7">
+            <img class="category-img" src="/icons/Furniture.png" alt="Furniture">
+            <span>Furniture</span>
+        </div>
+        <div class="category category-8">
+            <img class="category-img" src="/icons/Flights.png" alt="Flights">
+            <span>Flights</span>
+        </div>
+        <div class="category category-9">
+            <img class="category-img" src="/icons/Grocery.png" alt="Grocery">
+            <span>Grocery</span>
+        </div>
+    </nav>
+
+    <!-- Best Mobiles -->
+    <div class="best-mobile">
+        <div class="best-mobile-text-container">
+            <h2 class="best-mobile-text-container-text"><strong>Best Mobiles</strong></h2>
+            <div class="best-mobile-text-container-arrow" aria-label="Expand Best Mobiles List">&gt;</div>
+        </div>
+        <div class="best-mobile-product-container">
+            <template id="best-mobile-product">
+                <div class="best-mobile-product">
+                    <img class="best-mobile-product-image" src="/icons/phoneicon.png" alt="Product Image">
+                    <h3 class="best-mobile-product-name" aria-label="Product Name">Redmi Note 12</h3>
+                    <del>Rs <span class="best-mobile-product-orginal-price"
+                            aria-label="Product Original Price">9999</span></del>
+                    <span>Rs <span class="best-mobile-product-discount-price"
+                            aria-label="Product Discounted Price">7999</span></span>
+                    <button class="add-to-cart" aria-label="Add To Cart">Add to Cart</button>
+                </div>
+            </template>
+        </div>
+    </div>
+
+    <!-- Best TVs -->
+    <div class="best-tvs">
+        <div class="best-tvs-text-container">
+            <div class="best-tvs-text-container-text"><strong>Best TVs</strong></div>
+            <div class="best-tvs-text-container-arrow" aria-label="Expand Best TVs List">&gt;</div>
+        </div>
+        <div class="best-tvs-product-container">
+            <template id="best-tvs-product">
+                <div class="best-tvs-product">
+                    <img class="best-tvs-product-image" src="/icons/phoneicon.png" alt="Product Image">
+                    <h3 class="best-tvs-product-name" aria-label="Product Name">Redmi Note 12</h3>
+                    <del>Rs <span class="best-tvs-product-orginal-price"
+                            aria-label="Product Original Price">9999</span></del>
+                    <span>Rs <span class="best-tvs-product-discount-price"
+                            aria-label="Product Discounted Price">7999</span></span>
+                    <button class="add-to-cart" aria-label="Add To Cart">Add to Cart</button>
+                </div>
+            </template>
+        </div>
+
+    </div>
+</body>
+
+</html>
