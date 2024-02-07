@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping Cart</title>
+    <link rel="stylesheet" href="cart.css">
+    <script type="module" src="cart.js" defer></script>
+</head>
+<body>
+   
+    <header class="cart-header">
+        <a href="/home/index.html"><img src="/icons/FlipkartNavbarLogo.png" alt="Flipkart Logo" aria-label="Flipkart Logo"></a>
+    </header>
+
+    <div class="cart-container">
+        <div class="cart-shopping-items">
+            <div class="cart-shopping-items-header">
+                <span class="cart-shopping-items-header-text1" aria-label="Shopping Cart">Shopping Cart</span>
+                <span class="cart-shopping-items-header-text2" aria-label="Price">Price</span>
+            </div>
+            <hr>
+            <template>
+                <div class="cart-shopping-items-product">
+                    <img class="cart-shopping-items-product-img" src="icons/phoneicon.png" alt="Product Image" aria-label="Product Image">
+                    <div class="cart-shopping-items-product-info">
+                        <div class="cart-shopping-items-product-info-name" aria-label="Product Name">
+                            Samsung Galaxy S22 Ultra 5G (Burgundy, 12GB, 256GB Storage) with No Cost EMI/Additional Exchange Offers
+                        </div>
+                        <div class="cart-shopping-items-product-info-text-in-stock" aria-label="In stock">
+                            In stock
+                        </div>
+                        <div class="cart-shopping-items-product-info-text-eligible" aria-label="Eligible for FREE Shipping">
+                            Eligible for FREE Shipping
+                        </div>
+                        <div class="cart-shopping-items-product-info-product-count">
+                            <button class="cart-shopping-items-product-info-product-count-dec" aria-label="Decrease Quantity">-</button>
+                            <div class="cart-shopping-items-product-info-product-count-qty" aria-label="Quantity">&nbsp;Qty:&nbsp;<span class="cart-shopping-items-product-info-product-count-qty-1">1</span>&nbsp;</div>
+                            <button class="cart-shopping-items-product-info-product-count-inc" aria-label="Increase Quantity">+</button>
+                        </div>
+                        <button class="cart-shopping-items-product-info-remove" aria-label="Remove Product">Delete</button>
+                    </div>
+                    <div class="cart-shopping-items-product-price">
+                        <div class="cart-shopping-items-product-price-current" aria-label="Current Price">
+                            Rs84,999.00
+                        </div>
+                        <div class="cart-shopping-items-product-price-old" aria-label="MRP">
+                            MRP: <del>Rs99,999.00</del>
+                        </div>
+                    </div>
+                </div>
+            </template>
+        </div>          
+       <div>
+        <div class="cart-shopping-price-details">
+            <span class="cart-shopping-price-details-text" aria-label="Price Details">Price Details</span>
+            <hr>
+            <div class="cart-shopping-price-details-total-price">
+                <span class="cart-shopping-price-details-total-price-text" aria-label="Price">Price :</span>
+                <span class="cart-shopping-price-details-total-price-value" aria-label="Total Price">Rs9000</span>
+            </div>
+            <div class="cart-shopping-price-details-total-price">
+                <span class="cart-shopping-price-details-total-price-text" aria-label="Discount">Discount :</span>
+                <span class="cart-shopping-price-details-total-price-value discount" aria-label="Discounted Price">Rs9000</span>
+            </div>
+            <hr>
+            <strong class="cart-shopping-price-details-final-price">
+                <span class="cart-shopping-price-details-final-price-text" aria-label="Final Price">Final Price :</span>
+                <span class="cart-shopping-price-details-final-price-value" aria-label="Final Price Value">Rs9000</span>
+            </strong>
+            <hr>
+            <div class="cart-shopping-price-details-savings">
+                <span class="cart-shopping-price-details-savings-text" aria-label="Total Savings">Total Savings :</span>
+                <span class="cart-shopping-price-details-savings-value" aria-label="Savings Percentage">%</span>
+            </div>
+        </div>
+        <div class="place-order-container">
+            <button class="place-order-button" aria-label="Place Order">Place Order</button>
+        </div>
+       </div>
+       
+    </div>
+</body>
+</html>

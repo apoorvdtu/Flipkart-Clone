@@ -1,4 +1,4 @@
-.best-mobile{
+.best-tvs {
     display: flex;
     flex-direction: column;
     margin: 0.5rem 8rem;
@@ -8,10 +8,12 @@
     padding-left: 1rem;
     padding-bottom: 1rem;
 }
-.best-mobile *{
+
+.best-tvs * {
     background-color: white;
 }
-.best-mobile-text-container{
+
+.best-tvs-text-container {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -19,7 +21,8 @@
     align-items: center;
     margin-bottom: 1.25rem;
 }
-.best-mobile-text-container-arrow{
+
+.best-tvs-text-container-arrow {
     background-color: blue;
     height: 1.5rem;
     width: 1.5rem;
@@ -29,17 +32,20 @@
     justify-content: center;
     color: white;
 }
-.best-mobile-text-container-text{
+
+.best-tvs-text-container-text {
     font-size: 2rem;
 }
-.best-mobile-product-container{
+
+.best-tvs-product-container {
     display: flex;
     overflow-x: auto
 }
-.best-mobile-product{
+
+.best-tvs-product {
     display: flex;
     flex-direction: column;
-    border:0.1rem solid lightgray;
+    border: 0.1rem solid lightgray;
     border-radius: 1rem;
     padding: 0.5rem;
     align-items: center;
@@ -48,17 +54,21 @@
     height: 15rem;
     width: 100%;
     cursor: pointer;
-   
+
 }
-.best-mobile-product-image{
+
+.best-tvs-product-image {
     width: 8rem;
     margin-bottom: 0.25rem;
 }
-.best-mobile-product-image:hover,.add-to-cart:hover{
-   transform: scale(1.05);
-   
+
+.best-tvs-product-image:hover,
+.add-to-cart:hover {
+    transform: scale(1.05);
+
 }
-.add-to-cart{
+
+.add-to-cart {
     background-color: rgb(0, 174, 255);
     color: white;
     font-weight: bold;
@@ -67,9 +77,11 @@
     border: 0.1rem solid rgb(67, 255, 24);
     border-radius: 0.45rem
 }
-del{
+
+del {
     color: red;
 }
-.best-mobile-product-discount-price{
+
+.best-tvs-product-discount-price {
     color: green;
 }

@@ -25,10 +25,7 @@
     justify-content: space-around;
   
 }
-.cart-shopping-items{
-    /* border-radius: 5rem; */
-    /* border: 2px solid transparent; */
-}
+
 .cart-shopping-items *{
     background-color: white;
 }
