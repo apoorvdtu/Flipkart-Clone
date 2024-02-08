@@ -14,70 +14,71 @@
     </header>
 
     <div class="cart-container">
-        <div class="cart-shopping-items">
-            <div class="cart-shopping-items-header">
-                <span class="cart-shopping-items-header-text1" aria-label="Shopping Cart">Shopping Cart</span>
-                <span class="cart-shopping-items-header-text2" aria-label="Price">Price</span>
+        <div class="cart-items">
+            <div class="cart-items__header">
+                <span class="cart-items__shopping-cart" aria-label="Shopping Cart">Shopping Cart</span>
+                <span class="cart-items__shopping-price" aria-label="Price">Price</span>
             </div>
             <hr>
             <template>
-                <div class="cart-shopping-items-product">
-                    <img class="cart-shopping-items-product-img" src="icons/phoneicon.png" alt="Product Image" aria-label="Product Image">
-                    <div class="cart-shopping-items-product-info">
-                        <div class="cart-shopping-items-product-info-name" aria-label="Product Name">
+                <div class="cart-item">
+                    <img class="cart-item__product-img" src="icons/phoneicon.png" alt="Product Image" aria-label="Product Image">
+                    <div class="cart-item__product-info">
+                        <div class="cart-item__product-name" aria-label="Product Name">
                             Samsung Galaxy S22 Ultra 5G (Burgundy, 12GB, 256GB Storage) with No Cost EMI/Additional Exchange Offers
                         </div>
-                        <div class="cart-shopping-items-product-info-text-in-stock" aria-label="In stock">
+                        <div class="cart-item__in-stock" aria-label="In stock">
                             In stock
                         </div>
-                        <div class="cart-shopping-items-product-info-text-eligible" aria-label="Eligible for FREE Shipping">
+                        <div class="cart-item__free-shipping" aria-label="Eligible for FREE Shipping">
                             Eligible for FREE Shipping
                         </div>
-                        <div class="cart-shopping-items-product-info-product-count">
-                            <button class="cart-shopping-items-product-info-product-count-dec" aria-label="Decrease Quantity">-</button>
-                            <div class="cart-shopping-items-product-info-product-count-qty" aria-label="Quantity">&nbsp;Qty:&nbsp;<span class="cart-shopping-items-product-info-product-count-qty-1">1</span>&nbsp;</div>
-                            <button class="cart-shopping-items-product-info-product-count-inc" aria-label="Increase Quantity">+</button>
+                        <div class="cart-item__product-counter">
+                            <button class="cart-item__product-button cart-item__product-button--dec " aria-label="Decrease Quantity">-</button>
+                            <div class="cart-item__product-qty" aria-label="Quantity">&nbsp;Qty:&nbsp;<span class="cart-shopping-items-product-info-product-count-qty-1">1</span>&nbsp;</div>
+                            <button class="cart-item__product-button cart-item__product-button--inc" aria-label="Increase Quantity">+</button>
                         </div>
-                        <button class="cart-shopping-items-product-info-remove" aria-label="Remove Product">Delete</button>
+                        <button class="cart-item__product-remove" aria-label="Remove Product">Delete</button>
                     </div>
-                    <div class="cart-shopping-items-product-price">
-                        <div class="cart-shopping-items-product-price-current" aria-label="Current Price">
+                    <div class="product-price">
+                        <div class="product-price__current-price" aria-label="Current Price">
                             Rs84,999.00
                         </div>
-                        <div class="cart-shopping-items-product-price-old" aria-label="MRP">
+                        <div class="product-price__product-mrp-price" aria-label="MRP">
                             MRP: <del>Rs99,999.00</del>
                         </div>
                     </div>
                 </div>
             </template>
         </div>          
-       <div>
-        <div class="cart-shopping-price-details">
-            <span class="cart-shopping-price-details-text" aria-label="Price Details">Price Details</span>
+       <div class="cart-prices">
+        <div class="cart-prices__details">
+            <span class="cart-prices__price-detail-text" aria-label="Price Details">Price Details</span>
             <hr>
-            <div class="cart-shopping-price-details-total-price">
-                <span class="cart-shopping-price-details-total-price-text" aria-label="Price">Price :</span>
-                <span class="cart-shopping-price-details-total-price-value" aria-label="Total Price">Rs9000</span>
+            <div class="prices">
+                <span class="prices__label prices__label--total" aria-label="Price">Price :</span>
+                <span class="prices__value prices__value--total" aria-label="Total Price">Rs9000</span>
             </div>
-            <div class="cart-shopping-price-details-total-price">
-                <span class="cart-shopping-price-details-total-price-text" aria-label="Discount">Discount :</span>
-                <span class="cart-shopping-price-details-total-price-value discount" aria-label="Discounted Price">Rs9000</span>
+            <div class="prices">
+                <span class="prices__label prices__label--discount" aria-label="Discount">Discount :</span>
+                <span class="prices__value prices__value--discount" aria-label="Discounted Price">Rs9000</span>
             </div>
             <hr>
-            <strong class="cart-shopping-price-details-final-price">
-                <span class="cart-shopping-price-details-final-price-text" aria-label="Final Price">Final Price :</span>
-                <span class="cart-shopping-price-details-final-price-value" aria-label="Final Price Value">Rs9000</span>
+            <strong class="prices prices--final">
+                <span class="prices__label prices__label--final" aria-label="Final Price">Final Price :</span>
+                <span class="prices__value prices__value--final" aria-label="Final Price Value">Rs9000</span>
             </strong>
             <hr>
-            <div class="cart-shopping-price-details-savings">
-                <span class="cart-shopping-price-details-savings-text" aria-label="Total Savings">Total Savings :</span>
-                <span class="cart-shopping-price-details-savings-value" aria-label="Savings Percentage">%</span>
+            <div class="prices">
+                <span class="prices__label prices__label--saving" aria-label="Total Savings">Total Savings :</span>
+                <span class="prices__value prices__value--saving" aria-label="Savings In Percentage">%</span>
             </div>
         </div>
+        <button class="cart-prices__place-order" aria-label="Place Order">Place Order</button>    
         <div class="place-order-container">
             <button class="place-order-button" aria-label="Place Order">Place Order</button>
         </div>
-       </div>
+    </div>
        
     </div>
 </body>

@@ -24,12 +24,12 @@
     /* flex-direction: column; */
     /* width: 40rem; */
     height: 50rem;
-    background-color: rgb(255, 221, 179);
+    background-color: rgb(255, 242, 225);
     flex-wrap: wrap;
 }
 
 .addProductForm * {
-    background-color: rgb(255, 221, 179);
+    background-color: rgb(255, 242, 225);
     color: rgb(23, 2, 255);
 }
 
@@ -42,7 +42,7 @@ input,
 select {
     width: 50rem;
     padding: 0.5rem;
-    border: 0.25rem solid green;
+    border: 0.25rem solid rgb(170, 255, 170);
 }
 
 .addProductButton:hover {

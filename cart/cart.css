@@ -11,8 +11,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    /* width: em;
-     */
+
 }
 .cart-header *{
     background-color: white;
@@ -23,13 +22,12 @@
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-  
 }
 
-.cart-shopping-items *{
+.cart-items *{
     background-color: white;
 }
-.cart-shopping-items-header{
+.cart-items__header{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -41,46 +39,58 @@
     position: sticky;
     top: 0rem;
 }
-.cart-shopping-items-header-text1{
+.cart-items__shopping-cart{
     font-weight: bold;
     font-size: 1.5rem;
 }
-.cart-shopping-items-header-text2{
+.cart-items__shopping-price{
     align-self: end;
     margin-right:4rem;
 }
-
+.cart-item{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0.5rem;
+}
 .cart-shopping-items-product{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     padding: 0.5rem;
 }
-.cart-shopping-items-product-img{
+.cart-item__product-img{
     width: 12rem;
 }
-.cart-shopping-items-product-info{
+.cart-item__product-info{
     width: 38rem;
     word-wrap: normal;
     /* align-self: center; */
     
 }
-.cart-shopping-items-product-info-text-eligible{
+.cart-item__product-name{
  color: rgb(86, 200, 86);
 }
-.cart-shopping-items-product-info-text-in-stock{
+.cart-item__in-stock{
     color: blue;
 }
-.cart-shopping-items-product-info-product-count{
+.cart-item__product-qty{
     display: flex;
     /* padding: 1rem; */
     font-size: 1.25rem;
     align-items: center;
 }
-.cart-shopping-items-product-price{
+.product-price{
     width: 8rem;
 }
-.cart-shopping-items-product-price-current{
+.cart-item__product-counter{
+    display: flex;
+    /* padding: 1rem; */
+    font-size: 1.25rem;
+    align-items: center;
+}
+
+.product-price__current-price{
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -88,9 +98,8 @@
     font-weight: bold;
   
 }
-.cart-shopping-items-product-price-old{
+.product-price__product-mrp-price{
     display: flex;
-   
     align-items: center;
     justify-content: center;
     font-size: 0.75rem;
@@ -98,70 +107,59 @@
 del{
     color: red;
 }
-.cart-shopping-items-product-info-product-count-inc{
+.cart-item__product-button{
     padding: 0.25rem;
+    color: whitesmoke;
+    font-size: 1.25rem;
+    border: 0;
+}
+.cart-item__product-button--inc{
     background-color: green;
-    color: whitesmoke;
-    border: 0;
-    font-size: 1.25rem;
 }
-.cart-shopping-items-product-info-product-count-dec{
-    padding: 0.25rem;
+.cart-item__product-button--dec {
     background-color: red;
-    color: whitesmoke;
-    border: 0;
-    font-size: 1.25rem;
 }
-.cart-shopping-items-product-info-remove{
+.cart-item__product-remove{
     margin-top: 2rem;
     padding: 0.25rem;
     border: 0;
     background-color: red;
     color: white;
 }
-
 button{
     cursor: pointer;
 }
-.cart-shopping-price-details{
+.cart-prices{
     position: sticky;
     top: 0rem;
     background-color: white;
     width: 20rem;
     padding: 1rem;
 }
-.cart-shopping-price-details *{
+.cart-prices *{
     background-color: white;
     margin-top: 0.5rem;
     margin-bottom: 0.5rem;
 }
-.cart-shopping-price-details-total-price{
+.prices{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
 }
 
-.cart-shopping-price-details-total-price-value{
-    color: rgba(84, 141, 0, 0.902);
+.prices__value--total{
+    color: rgba(67, 99, 18, 0.902);
 }
-.cart-shopping-price-details-total-price-value.discount{
+.prices__value--discount{
     color: red;
 }
-.cart-shopping-price-details-final-price{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+.prices--final{
     font-size: larger;
     margin-top: 1rem;   
     margin-bottom: 1rem;
 }
-.cart-shopping-price-details-savings{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-  
-}
-.cart-shopping-price-details-savings-value{
+
+.prices__value--saving{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -179,5 +177,17 @@ button{
     border-radius: 4rem;
 }
 .place-order-button:hover{
+    transform: scale(1.05);
+}
+.cart-prices__place-order{
+    padding: 0.75rem;
+    margin-top: 4rem; 
+    font-size: large;
+    background-color: rgb(0, 181, 0);
+    color: white;
+    border: 0.25rem solid black;
+    border-radius: 4rem;
+}
+.cart-prices__place-order:hover{
     transform: scale(1.05);
 }

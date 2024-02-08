@@ -2,17 +2,17 @@ import { CART_EMPTY_MESSAGE, PRODUCT_QUANTITY_LESS_MESSAGE, PRODUCT_QUANTITY_MOR
 import { fetchProductsFromLocalStorage, saveCartInLocalStorage, fetchCartFromLocalStorage } from "../utilities/helper.js";
 
 const template = document.querySelector('template').content;
-const cartItems = document.querySelector('.cart-shopping-items');
-const cartTotalPrice = document.querySelector('.cart-shopping-price-details-total-price-value');
-const cartTotalDiscount = document.querySelector('.cart-shopping-price-details-total-price-value.discount');
-const cartFinalPrice = document.querySelector('.cart-shopping-price-details-final-price-value');
-const cartTotalDiscountInPercantage = document.querySelector('.cart-shopping-price-details-savings-value');
-const placeOrderButton = document.querySelector('.place-order-button');
+const cartItems = document.querySelector('.cart-items');
+const cartTotalPrice = document.querySelector('.prices__value--total');
+const cartTotalDiscount = document.querySelector('.prices__value--discount');
+const cartFinalPrice = document.querySelector('.prices__value--final');
+const cartTotalDiscountInPercantage = document.querySelector('.prices__value--saving');
+const placeOrderButton = document.querySelector('.cart-prices__place-order');
 
 function decreaseProductCount(event) {
     const parentElement = event.target.parentElement;
     const cartItemId = event.target.parentElement.parentElement.parentElement.id;
-    const cartItemQty = parentElement.querySelector('.cart-shopping-items-product-info-product-count-qty-1');
+    const cartItemQty = parentElement.querySelector('.cart-item__product-qty');
     const cartItemQtyValue = Number(cartItemQty.textContent);
     if (cartItemQtyValue > 1) {
         updateCart(cartItemId, cartItemQtyValue - 1);
@@ -24,7 +24,7 @@ function decreaseProductCount(event) {
 
 function increaseProductCount(event) {
     const parentElement = event.target.parentElement;
-    const cartItemQty = parentElement.querySelector('.cart-shopping-items-product-info-product-count-qty-1');
+    const cartItemQty = parentElement.querySelector('.cart-item__product-qty');
     const cartItemId = event.target.parentElement.parentElement.parentElement.id;
     const cartItemQtyValue = Number(cartItemQty.textContent);
     if (cartItemQtyValue < 10) {
@@ -59,16 +59,16 @@ function updateCart(cartItemId, qty) {
 
 function addToCart({ productId, productQty, productName, productImgSrc, productOriginalPrice, productDiscountPrice }) {
 
-    const cartItemTemplate = template.querySelector('div.cart-shopping-items-product');
+    const cartItemTemplate = template.querySelector('.cart-item');
     const cartItem = cartItemTemplate.cloneNode(true);
-    const cartItemImg = cartItem.querySelector('.cart-shopping-items-product-img');
-    const cartItemName = cartItem.querySelector('.cart-shopping-items-product-info-name');
-    const cartItemDecreaseButton = cartItem.querySelector('.cart-shopping-items-product-info-product-count-dec');
-    const cartItemIncreaseButton = cartItem.querySelector('.cart-shopping-items-product-info-product-count-inc');
-    const cartItemOriginalPrice = cartItem.querySelector('.cart-shopping-items-product-price-old');
-    const cartItemDiscountedPrice = cartItem.querySelector('.cart-shopping-items-product-price-current');
-    const cartItemDeleteButton = cartItem.querySelector('.cart-shopping-items-product-info-remove');
-    const cartItemQty = cartItem.querySelector('.cart-shopping-items-product-info-product-count-qty-1');
+    const cartItemImg = cartItem.querySelector('.cart-item__product-img');
+    const cartItemName = cartItem.querySelector('.cart-item__product-name');
+    const cartItemDecreaseButton = cartItem.querySelector('.cart-item__product-button--dec');
+    const cartItemIncreaseButton = cartItem.querySelector('.cart-item__product-button--inc');
+    const cartItemOriginalPrice = cartItem.querySelector('.product-price__product-mrp-price');
+    const cartItemDiscountedPrice = cartItem.querySelector('.product-price__current-price');
+    const cartItemDeleteButton = cartItem.querySelector('.cart-item__product-remove');
+    const cartItemQty = cartItem.querySelector('.cart-item__product-qty');
 
     cartItem.id = productId;
     cartItemImg.src = productImgSrc;

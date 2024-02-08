@@ -35,6 +35,8 @@ addProductForm.addEventListener('submit', function (event) {
   const product = new Product(productDetailsObj);
   products.push(product);
   saveProductsInLocalStorage();
+  alert('Product Added Succesfully');
+  addProductForm.reset();
 })
 
 
